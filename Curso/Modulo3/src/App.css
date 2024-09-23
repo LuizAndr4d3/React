@@ -1,0 +1,11 @@
+.principal{
+    width: 100%;
+    height: 100%;
+}
+.principal img{
+    display: block;
+    margin: 0 auto;
+}
+.principal h1{
+    text-align: center;
+}

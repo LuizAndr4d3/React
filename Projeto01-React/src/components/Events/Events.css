@@ -1,0 +1,41 @@
+/*.divEvents{
+    width: 100%;
+}
+.divIputs{
+    display: flex;
+    justify-content: center;
+}
+.divIputs input{
+    width: 300px;
+    height: 40px;
+    background-color: gray;
+    border: solid black 2px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+.divBotao{ 
+    display: flex;
+}
+.botaoCalcula{
+    text-align: center;
+    margin: 0 auto;
+    height: 28px;
+    width: 100px;
+    background-color: orange;
+    border: solid black 2px;
+    border-radius: 20px;
+}
+.Resultado{
+    color: white;
+    text-align: center;
+    font-size: 68px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: solid orange 2px;
+}*/

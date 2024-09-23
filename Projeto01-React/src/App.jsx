@@ -1,12 +1,12 @@
 import './App.css'
-import PrimeiroComponente from './components/component1'
+import HeaderPrincipal from './components/Header/HeaderPrincipal'
+
 
 function App() {
   return (
-    <header className='headerPrincipal'>
-      <h1>Projeto 1</h1>
-      <PrimeiroComponente/>
-    </header>
+    <>
+     <HeaderPrincipal/>
+    </>
   )
 }
 
