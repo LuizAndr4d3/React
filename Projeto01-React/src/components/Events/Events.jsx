@@ -1,20 +1,10 @@
+import { useState } from 'react'
 import './Events.css'
 
-/*const Events = () => {
+const Events = () => {
 
+    const [number, setNumber] = useState(10)
 
-    const handleMyEvent = (e) => {
-        
-    }
- 
-    const renderSomething = (x) => {
-        if(x){
-            return <h1>Renderizado</h1>
-        } else{
-            return <h1>Não renderizado</h1>
-        }
-        
-    }
     return(
         <div className="divEvents">
             <div className='divIputs'>
@@ -22,14 +12,14 @@ import './Events.css'
                 <input type="text" />
             </div>
             <div className="divBotao">
-                <button className='botaoCalcula'onClick={handleMyEvent}>Calcular</button>
+                <button className='botaoCalcula' onClick={() => {setNumber(number+number)}}>Calcular</button>
             </div>
             <div className='Resultado'>
-                {}
+                {number}
             </div>
         </div>
     )
 
 }
 
-export default Events*/
+export default Events
