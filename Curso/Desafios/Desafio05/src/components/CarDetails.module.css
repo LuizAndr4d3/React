@@ -1,0 +1,16 @@
+.car_Section{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 5px solid orange;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica;
+    font-weight: 600;
+    color: orange;
+}
+p{
+    font-size: 18px;
+    text-align: start;
+    margin-left: 10px;
+}
