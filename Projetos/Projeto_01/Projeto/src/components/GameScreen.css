@@ -1,0 +1,46 @@
+.points{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.tip{
+    text-decoration: underline;
+}
+
+.letterContainer p{
+    font-weight: 600;
+}
+.wrongLettersContainer p, span{
+    font-weight: 600;
+}
+.wordContainer{
+    margin-top: 1.5em;
+    border-radius: 25px;
+    border: solid 12px orange;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    display: flex;
+}
+
+.Letter, .blankSquare{
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    line-height: 1.5em;
+    border: 3px solid black;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    
+}
+.letterContainer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letterContainer input{
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+}
