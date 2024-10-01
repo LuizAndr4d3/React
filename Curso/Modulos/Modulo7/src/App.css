@@ -1,0 +1,22 @@
+.products{
+    list-style: none;
+    text-align: left;
+}
+
+.add-product{
+    border: solid black 1px
+}
+.add-product form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-product input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 150px;
+    text-align: center;
+}
