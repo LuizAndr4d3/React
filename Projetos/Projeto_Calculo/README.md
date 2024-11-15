@@ -21,8 +21,3 @@ Make sure you have the following installed:
 - Node.js (v16 or higher recommended)  
 - npm or yarn  
 
-### Installation  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/bisection-method-calculator.git
-   cd bisection-method-calculator
