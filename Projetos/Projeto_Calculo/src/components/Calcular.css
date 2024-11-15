@@ -1,0 +1,39 @@
+.input_valor{
+    width: 300px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.form_calc{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar_form{
+    margin-top: 10px;
+}
+
+.topo_form{
+    display: flex;
+    justify-content: center;
+}
+
+.reset{
+    display: flex;
+    background-color: black;
+    border: 1px white solid;
+    font-weight: 700;
+    color: orange;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.reset:hover{
+    cursor: pointer;
+}
+h2{
+    color: white;
+}
