@@ -15,11 +15,6 @@
     margin-top: 10px;
 }
 
-.topo_form{
-    display: flex;
-    justify-content: center;
-}
-
 .reset{
     display: flex;
     background-color: black;

@@ -2,15 +2,6 @@
     font-size: 45px;
     color: white;
 }
-.Header2{
-    margin-left: 5px;
-    color: black;
-    font-size: 45px;
-    background-color: orange;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 .div-header{
     display: flex;
     justify-content: center;

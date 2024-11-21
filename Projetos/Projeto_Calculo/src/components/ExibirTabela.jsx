@@ -3,13 +3,8 @@ import './ExibirTabela.css'
 import { evaluate, compile, number, abs} from 'mathjs'
 
 const ExibirTabela = ({ valor, valor1, funcao, m_iterac }) => {
-    const [raiz, setRaiz] = useState(null)
-    const [maxiterac, setMaxIterac] = useState(null)
-    if(m_iterac !== null){
-        var max_iterac = m_iterac
-    } else{
-        var max_iterac = 6
-    }
+    let raiz = 0
+    const [maxiterac, setMaxIterac] = useState(m_iterac ? m_iterac : 6)
     let iteracoes = 0
     const tolerancia = 0.0001
 
@@ -20,25 +15,34 @@ const ExibirTabela = ({ valor, valor1, funcao, m_iterac }) => {
     const valores_ar = [{'valor': valor, 'valor1': valor1, 'Xi': ((Number(valor)+Number(valor1))/2), 'c': ((Number(valor1) - Number(valor)))}]
 
 
-    while(iteracoes < max_iterac-1){
+    while(iteracoes < maxiterac-1){
         var x0 = ((Number(valor) + Number(valor1)) / Number(2))
         var fc = f(x0)
 
         if(abs(fc) < tolerancia || ((Number(valor1) - Number(valor)) / Number(2) < tolerancia)){
-            setRaiz(x0)
+            raiz = x0
             break
         }
 
         if(f(valor) * fc < 0){
             valor1 = x0;
-            valores_ar.push({'valor': valor, 'valor1': valor1, 'Xi': ((Number(valor)+Number(valor1))/Number(2)), 'c':(Number(valor1)-Number(valor))})
+            valores_ar.push({'valor': valor, 'valor1': valor1, 'Xi': x0, 'c':(Number(valor1)-Number(valor))})
         } else{
             valor = x0
-            valores_ar.push({'valor': valor, 'valor1': valor1, 'Xi': ((Number(valor)+Number(valor1))/Number(2)), 'c':(Number(valor1)-Number(valor))})
+            valores_ar.push({'valor': valor, 'valor1': valor1, 'Xi': x0, 'c':(Number(valor1)-Number(valor))})
         }
 
         iteracoes++
     }
+
+const validar_casas = (numero) => {
+    let n_string = numero.toString().split('.')
+    if(n_string.length > 1){
+        return (n_string[1].length > 6 ? numero.toFixed(6) : numero)
+    } else{
+        return numero
+    }
+}
 
 if(f(valor) * f(valor1) >= 0){
     return(
@@ -61,13 +65,13 @@ if(f(valor) * f(valor1) >= 0){
             </ul>
             {valores_ar.map((valores) => (
                 <ul key='corpo' className='corpo-tabela'>
-                    <li>{valores.valor}</li>
-                    <li>{valores.valor1}</li>
-                    <li>{(valores.Xi)}</li>
-                    <li>{(f(valores.valor)).toFixed(6)}</li>
-                    <li>{(f(valores.valor1).toFixed(6))}</li>
-                    <li>{(f(valores.Xi)).toFixed(6)}</li>
-                    <li>{(valores.c).toFixed(6)}</li>
+                    <li>{validar_casas(valores.valor)}</li>
+                    <li>{validar_casas(valores.valor1)}</li>
+                    <li>{validar_casas(valores.Xi)}</li>
+                    <li>{validar_casas((f(valores.valor)))}</li>
+                    <li>{validar_casas((f(valores.valor1)))}</li>
+                    <li>{validar_casas((f(valores.Xi)))}</li>
+                    <li>{validar_casas((valores.c))}</li>
             </ul>
             ))}
         </div>

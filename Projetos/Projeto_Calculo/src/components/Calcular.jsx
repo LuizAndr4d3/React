@@ -11,7 +11,6 @@ const Calcular = () => {
   const [iteracoes, setIteracoes] = useState(undefined)
 
   const handleCalc = (event) => {
-
     setExibir(true)
     event.preventDefault()
   }
@@ -48,8 +47,10 @@ const Calcular = () => {
       <button className='reset' onClick={handleReset}>Reset</button>
       <h2>Valores</h2>
       <form onSubmit={handleCalc}>
-        <div className='topo_form'><input className="input_valor" type="text" value={funcao} name='funcao' placeholder='Digite a função em termos de x (ex: x^3 - x - 2)' onChange={handleChangeFuncao}/>
-        <input className="input_valor" type="number" value={iteracoes} name='iteracoes' placeholder='Quantidade de iterações (Padrão: 6)' onChange={handleChangeIteracao}/></div>
+        <label className='form_calc'>
+          <input className="input_valor" type="text" value={funcao} name='funcao' placeholder='Digite a função em termos de x (ex: x^3 - x - 2)' onChange={handleChangeFuncao}/>
+          <input className="input_valor" type="number" value={iteracoes} name='iteracoes' placeholder='Quantidade Máxima de iterações (Padrão: 6)' onChange={handleChangeIteracao}/>
+        </label>
         <label className='form_calc'>
           <input className="input_valor" type="number" value={valor} name='valor' placeholder='Digite o primeiro valor' onChange={handleChangeValor}/>
           <input className="input_valor" type="number" value={valor1} name='valor1' placeholder='Digite o segundo valor' onChange={handleChangeValor1}/>
