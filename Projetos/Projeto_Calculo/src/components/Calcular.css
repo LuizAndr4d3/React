@@ -13,6 +13,18 @@
 
 .enviar_form{
     margin-top: 10px;
+    border-radius: 25px;
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.enviar_form:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px white ;
 }
 
 .reset{
@@ -20,7 +32,7 @@
     background-color: black;
     border: 1px white solid;
     font-weight: 700;
-    color: orange;
+    color: white;
     width: 100px;
     justify-content: center;
     align-items: center;
@@ -28,6 +40,7 @@
 }
 .reset:hover{
     cursor: pointer;
+    box-shadow: 1px 1px 5px white ;
 }
 h2{
     color: white;

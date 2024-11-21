@@ -72,7 +72,7 @@ if(f(valor) * f(valor1) >= 0){
                     <li>{validar_casas((f(valores.valor1)))}</li>
                     <li>{validar_casas((f(valores.Xi)))}</li>
                     <li>{validar_casas((valores.c))}</li>
-            </ul>
+                </ul>
             ))}
         </div>
     </div>
