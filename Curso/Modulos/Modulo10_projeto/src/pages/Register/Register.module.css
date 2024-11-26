@@ -1,0 +1,60 @@
+.formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInput{
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 18px;
+}
+
+.userInput:focus{
+    background-color: rgb(184, 184, 184);
+}
+
+.registrar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#cc01ff, #010a6b);
+    border: none;
+    box-shadow: 10px 10px 10px black;
+    width: 40%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.text{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.submitButton{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    background: linear-gradient(#cc01ff, #010a6b);
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+.submitButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px white;
+}
